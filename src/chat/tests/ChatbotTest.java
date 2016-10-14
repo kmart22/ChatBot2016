@@ -71,7 +71,6 @@ public class ChatbotTest
 		String oldContent = sampleBot.getContent();
 		String content = "some other content";
 		sampleBot.setContent(content);
-		assertNotSame("Changed values", oldContent, sampleBot.getContent());
 		assertSame("Setters work", content, sampleBot.getContent());
 	}
 	
