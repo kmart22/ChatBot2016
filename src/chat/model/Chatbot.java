@@ -20,15 +20,81 @@ public class Chatbot
 	 */
 	public Chatbot(String userName)
 	{
+		politicalTopicList = new ArrayList<String>();
 		memesList = new ArrayList<String>();
+		buildMemesList();
+		buildPoliticalTopicsList();
 	}
 
 	private void buildMemesList()
 	{
+		memesList.add("doge");
+		memesList.add("Shrek");
+		memesList.add("Harambe");
+		memesList.add("dat boi");
+		memesList.add("boi");
+		memesList.add("pepe");
+		memesList.add("forever alone");
+		memesList.add("troll");
+		memesList.add("krusty krab");
+		memesList.add("pedo bear");
+		memesList.add("Ken Bone");
+		memesList.add("Spongebob");
+		memesList.add("me gusta");
+		memesList.add("dab");
+		memesList.add("doge");
+		memesList.add("Shrek");
+		memesList.add("Harambe");
+		memesList.add("dat boi");
+		memesList.add("boi");
+		memesList.add("pepe");
+		memesList.add("forever alone");
+		memesList.add("troll");
+		memesList.add("krusty krab");
+		memesList.add("pedo bear");
+		memesList.add("Ken Bone");
+		memesList.add("Spongebob");
+		memesList.add("me gusta");
+		memesList.add("dab");
 	}
 
 	private void buildPoliticalTopicsList()
 	{
+		politicalTopicList.add("Trump");
+		politicalTopicList.add("Donald");
+		politicalTopicList.add("Clinton");
+		politicalTopicList.add("Hillary");
+		politicalTopicList.add("Obama");
+		politicalTopicList.add("president");
+		politicalTopicList.add("Voting");
+		politicalTopicList.add("November 8");
+		politicalTopicList.add("Donald Trump");
+		politicalTopicList.add("Hillary Clinton");
+		politicalTopicList.add("Barack Obama");
+		politicalTopicList.add("Kaine");
+		politicalTopicList.add("vice president");
+		politicalTopicList.add("election");
+		politicalTopicList.add("republican");
+		politicalTopicList.add("democrat");
+		politicalTopicList.add("debate");
+		politicalTopicList.add("Trump");
+		politicalTopicList.add("Donald");
+		politicalTopicList.add("Clinton");
+		politicalTopicList.add("Hillary");
+		politicalTopicList.add("Obama");
+		politicalTopicList.add("president");
+		politicalTopicList.add("Voting");
+		politicalTopicList.add("November 8");
+		politicalTopicList.add("Donald Trump");
+		politicalTopicList.add("Hillary Clinton");
+		politicalTopicList.add("Barack Obama");
+		politicalTopicList.add("Kaine");
+		politicalTopicList.add("vice president");
+		politicalTopicList.add("election");
+		politicalTopicList.add("republican");
+		politicalTopicList.add("democrat");
+		politicalTopicList.add("debate");
+		
 	}
 
 	/**
