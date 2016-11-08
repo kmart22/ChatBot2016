@@ -6,14 +6,14 @@ import java.awt.Dimension;
 
 public class ChatFrame extends JFrame
 {
-	private ChatController baseController;
+	private ChatController baseFrame;
 	private ChatPanel appPanel;
 	
-	public  void ChatFrame(ChatController baseController)
+	public  ChatFrame(ChatController baseController)
 	{
 		super();
-		this.baseController = baseController;
-		appPanel = new ChatPanel(baseController);
+		this.baseFrame = baseFrame;
+		appPanel = new ChatPanel(baseFrame);
 		
 		setupFrame();
 	}
