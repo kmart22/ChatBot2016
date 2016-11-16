@@ -2,16 +2,20 @@ package chat.controller;
 
 import chat.model.Chatbot;
 import chat.view.ChatbotViewer;
+import chat.view.ChatFrame;
 
 public class ChatController
 {
 	private Chatbot stupidBot;
 	private ChatbotViewer display;
+	private ChatFrame chatFrame;
 	
 	public ChatController()
 	{
 		stupidBot = new Chatbot("lady-stealer");
 		display = new ChatbotViewer();
+		chatFrame = new ChatFrame(this);
+		
 	}
 	
 	public void start()
@@ -25,7 +29,7 @@ public class ChatController
 		}
 	}
 	
-	private String useChatbotCheckers(String input)
+	public String useChatbotCheckers(String input)
 	{
 		String checkedInput = "";
 		
@@ -44,4 +48,25 @@ public class ChatController
 		
 		return checkedInput;
 	}
+	
+	public ChatFrame getBaseFrame()
+	{
+		return chatFrame;
+	}
+	
+	public Chatbot getChatbot()
+	{
+		return stupidBot;
+	}
+	
+	public String communicateWithChatbot(String userText)
+	{
+		String botText = "";
+		
+		return botText;
+	}
+	
+	
+	
+	
 }
