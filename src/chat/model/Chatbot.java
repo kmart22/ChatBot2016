@@ -13,6 +13,9 @@ public class Chatbot
 	private ArrayList<String> politicalTopicList;
 	private String userName;
 	private String content;
+	private ArrayList<String> twitterList;
+	private ArrayList<String> htmlList;
+	private ArrayList<String> keyboardMashList;
 
 	/**
 	 * * Creates an instance of the Chatbot with the supplied username. * @param
@@ -21,9 +24,16 @@ public class Chatbot
 	public Chatbot(String userName)
 	{
 		politicalTopicList = new ArrayList<String>();
+		buildPoliticalTopicsList();
 		memesList = new ArrayList<String>();
 		buildMemesList();
-		buildPoliticalTopicsList();
+		htmlList = new ArrayList<String>();
+		buildHTMLList();
+		twitterList = new ArrayList<String>();
+		buildTwitterList();
+		keyboardMashList = new ArrayList<String>();
+		buildKeyboardMashList();
+		
 	}
 
 	private void buildMemesList()
@@ -96,7 +106,25 @@ public class Chatbot
 		politicalTopicList.add("debate");
 		
 	}
+	
+	private void buildTwitterList()
+	{
+		twitterList.add("@d4d sretsf ");
+		twitterList.add("#dw35 f");
+	}
+	
+	private void buildHTMLList()
+	{
+		htmlList.add("<B>  </B>");
+		htmlList.add("<A HREF=\"sdfs.html\"> </a>");
+		htmlList.add("<P>");
+		htmlList.add("<I> sdadas </i>");
+	}
 
+	private void buildKeyboardMashList()
+	{
+		
+	}
 	/**
 	 * * Checks the length of the supplied string. Returns false if the supplied
 	 * String is empty or null, otherwise returns true. * @param currentInput * @return
