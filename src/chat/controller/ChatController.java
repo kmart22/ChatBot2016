@@ -66,6 +66,43 @@ public class ChatController
 		return botText;
 	}
 	
+	private String randomTopicGenerator()
+	{
+		String randomTopic = "";
+		int random = (int) (Math.random() * 7);
+		
+		switch(random)
+		{
+		case 0:
+			randomTopic = "Do you like the Dallas Cowboys?";
+			break;
+		case 1:
+			randomTopic = "video games are really fun!!";
+			break;
+		case 2:
+			randomTopic = "How about that wall?";
+			break;
+		case 3:
+			randomTopic = "time to eat";
+			break;
+		case 4:
+			randomTopic = "who is you're favorite person in the whole world?";
+			break;
+		case 5:
+			randomTopic = "time to learn programming!";
+			break;
+		case 6:
+			randomTopic = "do you like the snow?";
+			break;
+		default: 
+			randomTopic = "This can't be happening!";
+		}
+		
+		
+		return randomTopic;
+		
+		
+	}
 	
 	
 	

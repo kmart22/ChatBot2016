@@ -27,12 +27,9 @@ public class Chatbot
 		buildPoliticalTopicsList();
 		memesList = new ArrayList<String>();
 		buildMemesList();
-		htmlList = new ArrayList<String>();
-		buildHTMLList();
 		twitterList = new ArrayList<String>();
 		buildTwitterList();
-		keyboardMashList = new ArrayList<String>();
-		buildKeyboardMashList();
+		
 		
 	}
 
@@ -113,17 +110,20 @@ public class Chatbot
 		twitterList.add("#dw35 f");
 	}
 	
-	private void buildHTMLList()
-	{
-		htmlList.add("<B>  </B>");
-		htmlList.add("<A HREF=\"sdfs.html\"> </a>");
-		htmlList.add("<P>");
-		htmlList.add("<I> sdadas </i>");
-	}
-
-	private void buildKeyboardMashList()
+	private boolean HtmlChecker(String currentInput)
 	{
 		
+	}
+	
+
+	public boolean  keyboardMashChecker(String currentInput)
+	{
+		boolean isMash = false;
+		if(currentInput.equals("sdf") || currentInput.equals("dfg") || currentInput.equals("cvb") || currentInput.equals(",./"))
+		{
+			isMash = true;
+		}
+		return isMash;
 	}
 	/**
 	 * * Checks the length of the supplied string. Returns false if the supplied
@@ -230,6 +230,7 @@ public class Chatbot
 	 */
 	public void setContent(String content)
 	{
+		
 	}
 
 }
