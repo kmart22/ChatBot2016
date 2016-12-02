@@ -106,15 +106,21 @@ public class Chatbot
 		twitterList.add("@d4d sretsf ");
 		twitterList.add("#dw35 f");
 	}
-
-private boolean HtmlChecker(String currentInput)
+	
+private boolean twitterChecker(String currentInput)
 {
-	boolean isHTML = false;
+	boolean isTweet = false;
+	if(currentInput.equals("")))
+}
+
+private boolean inputHTMLChecker(String currentInput)
+{
+	boolean hasHTML = false;
 	if(currentInput.equals("<B>  </B>") || currentInput.equals("<A HREF=\"sdfs.html\"> </a>") || currentInput.equals("<P>") || currentInput.equals("<I> sdadas </i>"))
 	{
-		isHTML = true;
+		hasHTML = true;
 	}
-	return isHTML;
+	return hasHTML;
 }
 
 	public boolean  keyboardMashChecker(String currentInput)
