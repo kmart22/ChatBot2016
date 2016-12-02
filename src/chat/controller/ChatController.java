@@ -8,14 +8,12 @@ public class ChatController
 {
 	private Chatbot stupidBot;
 	private ChatbotViewer display;
-	private ChatFrame chatFrame;
+	private ChatFrame baseFrame;
 	
 	public ChatController()
 	{
 		stupidBot = new Chatbot("lady-stealer");
 		display = new ChatbotViewer();
-		chatFrame = new ChatFrame(this);
-		
 	}
 	
 	public void start()
@@ -29,7 +27,7 @@ public class ChatController
 		}
 	}
 	
-	public String useChatbotCheckers(String input)
+	private String useChatbotCheckers(String input)
 	{
 		String checkedInput = "";
 		
@@ -51,7 +49,7 @@ public class ChatController
 	
 	public ChatFrame getBaseFrame()
 	{
-		return chatFrame;
+		return baseFrame;
 	}
 	
 	public Chatbot getChatbot()
@@ -103,7 +101,6 @@ public class ChatController
 		
 		
 	}
-	
 	
 	
 }

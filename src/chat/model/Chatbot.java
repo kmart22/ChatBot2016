@@ -11,11 +11,9 @@ public class Chatbot
 {
 	private ArrayList<String> memesList;
 	private ArrayList<String> politicalTopicList;
+	private ArrayList<String> twitterList;
 	private String userName;
 	private String content;
-	private ArrayList<String> twitterList;
-	private ArrayList<String> htmlList;
-	private ArrayList<String> keyboardMashList;
 
 	/**
 	 * * Creates an instance of the Chatbot with the supplied username. * @param
@@ -24,13 +22,11 @@ public class Chatbot
 	public Chatbot(String userName)
 	{
 		politicalTopicList = new ArrayList<String>();
-		buildPoliticalTopicsList();
 		memesList = new ArrayList<String>();
 		buildMemesList();
 		twitterList = new ArrayList<String>();
-		buildTwitterList();
-		
-		
+		buildTwitterList();	
+		buildPoliticalTopicsList();
 	}
 
 	private void buildMemesList()
@@ -103,18 +99,23 @@ public class Chatbot
 		politicalTopicList.add("debate");
 		
 	}
+
 	
 	private void buildTwitterList()
 	{
 		twitterList.add("@d4d sretsf ");
 		twitterList.add("#dw35 f");
 	}
-	
-	private boolean HtmlChecker(String currentInput)
+
+private boolean HtmlChecker(String currentInput)
+{
+	boolean isHTML = false;
+	if(currentInput.equals("<B>  </B>") || currentInput.equals("<A HREF=\"sdfs.html\"> </a>") || currentInput.equals("<P>") || currentInput.equals("<I> sdadas </i>"))
 	{
-		
+		isHTML = true;
 	}
-	
+	return isHTML;
+}
 
 	public boolean  keyboardMashChecker(String currentInput)
 	{
@@ -125,6 +126,7 @@ public class Chatbot
 		}
 		return isMash;
 	}
+
 	/**
 	 * * Checks the length of the supplied string. Returns false if the supplied
 	 * String is empty or null, otherwise returns true. * @param currentInput * @return
